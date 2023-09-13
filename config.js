@@ -4,7 +4,7 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/co
 
 //═══════[Required Variables]════════\\
 global.owner = process.env.OWNER_NUMBER.split(",")
-global.mongodb = process.env.MONGODB_URI || "Enter-MongoURI-HERE"
+global.mongodb = process.env.MONGODB_URI || "mongodb+srv://akunu:94773010580@cluster0.ifkekqx.mongodb.net/?retryWrites=true&w=majority"
 global.port= process.env.PORT || 5000
 global.email = 'sam@sec.live'
 global.github = 'fenixprogrammerz@gmail.com'
@@ -22,7 +22,7 @@ module.exports = {
   alivepic: process.env.ALIVE_IMG || 'https://imgur.com/gallery/57Cvzdg',
   alivemsj: process.env.ALIVE_MSJ || '𞋯',
   ownername:process.env.OWNER_NAME || '𝙁𝙀𝙉𝙄𝙓𝙓𝙓',
-  sessionName: process.env.SESSION_ID || 'PUT-HERE',
+  sessionName: process.env.SESSION_ID || 'J7MzUJRa#kqQZp6nHi7nK8KY2e0e-vTlqF4uIoQ3VtukhXPAR_Ns',
   author: process.env.PACK_INFO.split(";")[0] || '𝘿𝙀𝙑𝙊𝙉;𝙁𝙀𝙉𝙄𝙓𝙓𝙓', 
   auto_read_status : process.env.AUTO_READ_STATUS || 'true',
   packname: process.env.PACK_INFO.split(";")[1] || 'FENIX;XXX',
